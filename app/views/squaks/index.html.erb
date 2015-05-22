@@ -1,0 +1,18 @@
+<a href="/">Home</a>
+<a href="/users">Users</a>
+<a href="/users/new">SignUp</a>
+<a href="/sign_in">Existing Users Sign In</a>
+<a href="/squaks">See All Teh Squaks</a>
+
+
+
+
+<h3>TWITTER</h3>
+
+<ul>
+  <% @squaks.each do |squak| %>
+    <li>
+      <%= squak.message %>
+    </li>
+  <% end %>
+</ul>

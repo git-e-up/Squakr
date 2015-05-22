@@ -1,0 +1,21 @@
+<%= render partial: 'navigation'%>
+
+<h3>Sign-In</h3>
+
+<%= form_tag('/log_in', method: :post) do %>
+  <%= label_tag :username %>
+  <%= text_field_tag :username %>
+  <%= label_tag :password %>
+  <%= password_field_tag :password %>
+  <%= submit_tag 'sign-in'%>
+<% end %>
+
+<h3>New users sign up
+</h3>
+<h3>
+  <%= link_to('here', "/users/new", :name => "/users/new", :class => "stuff") %>
+</h3>
+
+<%= form_tag('/users', method: :get) do %>
+  <%= submit_tag "user list " %>
+<% end %>
