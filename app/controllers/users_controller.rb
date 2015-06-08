@@ -9,10 +9,12 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new  # teach the form how to be
+
   end
   def create
     user = User.create( user_params )
-    redirect_to "/users/#{ user.id }"
+    # redirect_to "/users/#{ user.id }"
+    redirect_to "/sign_in"
   end
 
   def edit

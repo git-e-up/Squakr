@@ -1,4 +1,4 @@
-<%= render partial: 'navigation'%>
+<!-- # <%= render partial: 'navigation'%> -->
 
 <h3>Sign-In</h3>
 
@@ -10,10 +10,7 @@
   <%= submit_tag 'sign-in'%>
 <% end %>
 
-<h3>New users sign up
-</h3>
-<h3>
-  <%= link_to('here', "/users/new", :name => "/users/new", :class => "stuff") %>
+<h3><%= link_to('New users sign up here', "/users/new", :name => "/users/new", :class => "stuff") %>
 </h3>
 
 <%= form_tag('/users', method: :get) do %>
