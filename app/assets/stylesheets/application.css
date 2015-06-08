@@ -20,4 +20,14 @@
  *= require owl.carousel
  *= require prettify
  *= require responsive
+ *= require bootstrap
  */
+
+ .big {
+
+   display: inline-block;
+ }
+
+ /*body {
+   padding-top: 150px;
+ }*/

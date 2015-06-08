@@ -1,8 +1,4 @@
-<a href="/">Home</a>
-<a href="/users">Users</a>
-<a href="/users/new">SignUp</a>
-<a href="/sign_in">Existing Users Sign In</a>
-<a href="/squaks">See All Teh Squaks</a>
+
 
 <script>
 $(document).ready(function() {
@@ -11,7 +7,7 @@ $(document).ready(function() {
 
   var owl = $("#owl-example");
 
-  owl.trigger('owl.play',2000); //owl.play event accept autoPlay speed as second parameter
+   owl.trigger('owl.play',2000); //owl.play event accept autoPlay speed as second parameter
 
 
   owl.owlCarousel({
@@ -31,8 +27,9 @@ $(document).ready(function() {
 
 <ul id="owl-example" class="owl-carousel">
   <% @squaks.each do |squak| %>
-    <li>
+    <li class="big">
       <%= squak.user.username %> :
+
       <%= squak.message %>
     </li>
   <% end %>

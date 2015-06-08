@@ -19,5 +19,6 @@
 //= require bootstrap-tab
 //= require prettify
 //= require run_prettify
+//= require bootstrap
 
 //= require_tree .
