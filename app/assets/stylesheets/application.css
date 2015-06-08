@@ -12,4 +12,12 @@
  *
  *= require_tree .
  *= require_self
+ *= require owl.carousel
+ *= require owl.theme
+ *= require owl.transitions
+ *= require bootstrapTheme
+ *= require custom
+ *= require owl.carousel
+ *= require prettify
+ *= require responsive
  */

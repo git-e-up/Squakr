@@ -4,12 +4,19 @@
 <a href="/sign_in">Existing Users Sign In</a>
 <a href="/squaks">See All Teh Squaks</a>
 
+<script>
+$(document).ready(function() {
+
+  $("#owl-example").owlCarousel();
+
+});
+</script>
 
 
 
 <h3>TWITTER</h3>
 
-<ul>
+<ul id="owl-example" class="owl-carousel">
   <% @squaks.each do |squak| %>
     <li>
       <%= squak.message %>

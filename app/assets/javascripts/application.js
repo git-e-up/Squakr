@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require owl.carousel
+//= require application
+//= require bootstrap-collapse
+//= require bootstrap-tab
+//= require prettify
+//= require run_prettify
+
 //= require_tree .
