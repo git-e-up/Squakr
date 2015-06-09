@@ -16,6 +16,10 @@ class SquaksController < ApplicationController
     @squaks = Squak.all
   end
 
+  def show
+    @squak = Squak.find(params[:id])
+  end
+
   private
 
   def squak_params

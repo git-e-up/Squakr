@@ -4,31 +4,29 @@
 
 <ul>
   <% @users.each do |user| %>
-    <li>
-    <a class="clik" href="#"><%= user.username %></a>
+    <li class="list-group-item col-xs-4">
+    <a class="clik" href="/users/<%= user.id %>"><%= user.username %></a>
     </li>
   <% end %>
 </ul>
 <div class="sqclik"></div>
 
+<% @users.each do |user| %>
+
+  <li class="big">
+    <%= user.username %> :
+    <% user.squaks.each do |squak| %>
+      <% if squak.message.length > 1 %>
+        <%= squak.message %>
+      <% end %>!!!
+
+    <% end %>
+  </li>
+
+<% end %>
+
 <script>
 $('.clik').click(function() {
-  $.ajax({
 
-    url: "/squaks",
-
-
-
-    success: function(data){
-     $(".big")
-      .contents()
-        .filter(function() {
-          return this.nodeType === 3;
-        })
-          .wrap( "<p></p>" )
-          .end()
-
-    }
-  })
 });
 </script>

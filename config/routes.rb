@@ -14,8 +14,10 @@ Rails.application.routes.draw do
     get 'log_out' => 'sessions#log_out'
 
     get '/squaks' => 'squaks#index'
+
     post '/squaks' => 'squaks#create'
     delete '/squaks/:id' => 'squaks#destroy'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
