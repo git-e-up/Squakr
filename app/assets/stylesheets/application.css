@@ -51,3 +51,7 @@
   .owl-page {
     visibility: hidden;
   }
+
+.bigger {
+  font-size: 16px;
+}
