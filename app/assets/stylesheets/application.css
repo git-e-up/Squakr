@@ -35,7 +35,7 @@
 
  .wenge {
    /*background-color: rgba(100,84,82,.3);*/
-   background-color: lightblue;
+
  }
 
  /*.cacaw {
@@ -54,4 +54,11 @@
 
 .bigger {
   font-size: 16px;
+}
+
+body {
+  background-image: url("/fluffy-clouds.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: lightblue;
 }
