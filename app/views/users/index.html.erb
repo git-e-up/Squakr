@@ -11,19 +11,19 @@
 </ul>
 <div class="sqclik"></div>
 
-<% @users.each do |user| %>
-
-  <li class="big">
-    <%= user.username %> :
-    <% user.squaks.each do |squak| %>
-      <% if squak.message.length > 1 %>
-        <%= squak.message %>
-      <% end %>!!!
-
-    <% end %>
-  </li>
-
-<% end %>
+<!-- # <% @users.each do |user| %>
+#
+#   <li class="big">
+#     <%= user.username %> :
+#     <% user.squaks.each do |squak| %>
+#       <% if squak.message.length > 1 %>
+#         <%= squak.message %>
+#       <% end %>!!!
+#
+#     <% end %>
+#   </li>
+#
+# <% end %> -->
 
 <script>
 $('.clik').click(function() {
