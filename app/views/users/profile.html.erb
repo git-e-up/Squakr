@@ -1,17 +1,20 @@
 <!-- # <%= render partial: 'navigation'%> -->
 <h1><%= @user.username %>... is logged in</h1>
 
-<ul>
-  <% @user.squaks.each do |squak| %>
-    <li>
-      <%= form_tag("/squaks/#{ squak.id }", method: :delete) do %>
-        <%= submit_tag "squak destruction"%>
-      <% end %>
-      <%= squak.message %>
-    </li>
-  <% end %>
-</ul>
+<div class="container">
+  <ul>
+    <% @user.squaks.each do |squak| %>
+      <li class="squakbox">
+        <%= squak.message %>
+        <%= form_tag("/squaks/#{ squak.id }", method: :delete) do %>
+          <%= submit_tag "delete squak"%>
+        <% end %>
 
+      </li>
+
+    <% end %>
+  </ul>
+</div>
 
 <%= form_tag('/log_out', method: :delete) do %>
   <%= submit_tag "Log-Outta Heyaaa" %>

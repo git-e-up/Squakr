@@ -15,6 +15,7 @@ class SquaksController < ApplicationController
   def index
     @squaks = Squak.all
   end
+  
   private
 
   def squak_params

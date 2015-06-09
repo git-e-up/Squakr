@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
     post 'log_in' => 'sessions#log_in'
     delete 'log_out' => 'sessions#log_out'
+    get 'log_out' => 'sessions#log_out'
 
     get '/squaks' => 'squaks#index'
     post '/squaks' => 'squaks#create'

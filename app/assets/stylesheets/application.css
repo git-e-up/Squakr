@@ -31,3 +31,17 @@
  /*body {
    padding-top: 150px;
  }*/
+
+ .wenge {
+   background-color: rgba(100,84,82,.3);
+ }
+
+ /*.cacaw {
+
+    background-repeat: no-repeat;
+    image-size: 200px;
+  }*/
+
+  .squakbox {
+    outline: 1px solid grey;
+  }
