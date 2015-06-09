@@ -26,6 +26,7 @@
  .big {
 
    display: inline-block;
+   font-size: 24px;
  }
 
  /*body {
@@ -44,4 +45,8 @@
 
   .squakbox {
     outline: 1px solid grey;
+  }
+
+  .owl-page {
+    visibility: hidden;
   }

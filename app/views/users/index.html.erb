@@ -5,7 +5,30 @@
 <ul>
   <% @users.each do |user| %>
     <li>
-      <%= user.username %>
+    <a class="clik" href="#"><%= user.username %></a>
     </li>
   <% end %>
 </ul>
+<div class="sqclik"></div>
+
+<script>
+$('.clik').click(function() {
+  $.ajax({
+
+    url: "/squaks",
+
+
+
+    success: function(data){
+     $(".big")
+      .contents()
+        .filter(function() {
+          return this.nodeType === 3;
+        })
+          .wrap( "<p></p>" )
+          .end()
+
+    }
+  })
+});
+</script>
