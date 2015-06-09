@@ -1,20 +1,24 @@
 <!-- # <%= render partial: 'navigation'%> -->
 
-<h3>Sign-In</h3>
-
-<%= form_tag('/log_in', method: :post) do %>
-  <%= label_tag :username %>
-  <%= text_field_tag :username %>
-  <%= label_tag :password %>
-  <%= password_field_tag :password %>
-  <%= submit_tag 'sign-in'%>
-<% end %>
-
-<h3><%= link_to('New users sign up here', "/users/new", :name => "/users/new", :class => "stuff") %>
+<h3 class="col-sm-6 col-md-6">Sign-In</h3>
+<h3 class="col-sm-6 col-md-6"><%= link_to('New users sign up here', "/users/new", :name => "/users/new", :class => "stuff") %>
 </h3>
-
-<%= form_tag('/users', method: :get) do %>
-  <%= submit_tag "user list " %>
+<br>
+</br>
+<div class="row top-buffer">
+<%= form_tag('/log_in', method: :post) do %>
+  <div class="col-sm-6 col-md-1"><%= label_tag :username %></div>
+  <div class="col-sm-6 col-md-3"><%= text_field_tag :username %></div>
+  <div class="col-sm-6 col-md-1">  <%= label_tag :password %></div>
+  <div class="col-sm-6 col-md-3"><%= password_field_tag :password %></div>
+  <div class="col-sm-6 col-md-3"><%= submit_tag 'sign-in'%></div>
 <% end %>
+</div>
+
+
+
+<!-- # <%= form_tag('/users', method: :get) do %>
+#   <%= submit_tag "user list " %>
+# <% end %> -->
 
 <!-- <img src="/cacaw.png" alt="bird photo" style="margin:10px;" /> -->

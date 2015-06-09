@@ -59,6 +59,9 @@
 body {
   background-image: url("/fluffy-clouds.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
+
   background-color: lightblue;
+}
+
+.top-buffer { margin-top: 40px;
 }

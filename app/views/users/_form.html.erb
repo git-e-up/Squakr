@@ -1,9 +1,11 @@
+<div class="row top-buffer">
 <%= form_for @user do |f|%>
-  <%= f.label :username %>
-  <%= f.text_field :username %>
+  <div class="col-sm-6 col-md-1"><%= f.label :username %></div>
+  <div class="col-sm-6 col-md-3"><%= f.text_field :username %></div>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+  <div class="col-sm-6 col-md-1"><%= f.label :password %></div>
+  <div class="col-sm-6 col-md-3"><%= f.password_field :password %></div>
 
-  <%= f.submit %>
+  <div class="col-sm-6 col-md-3"><%= f.submit %></div>
 <% end %>
+</div>
