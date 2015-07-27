@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   def index
     @users = User.all
-  
+
   end
 
   def show
@@ -44,6 +44,7 @@ class UsersController < ApplicationController
     @user = current_user
     @squak = Squak.new
     @squaks = Squak.all
+
   end
 
   def sign_in # Render a sign-in form

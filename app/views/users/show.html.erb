@@ -7,15 +7,18 @@
 </li>
 
 <ul>
-
+  <% if @user.squaks.count > 0 %>
     <% @user.squaks.each do |squak| %>
     <li class>
-      <% if (squak.message).length > 1 %>
-        <%= squak.message %>
-      <% else %>
-      <%= "no squaks yet"  %>
-      <% end %>!!!
+
+      <%= squak.message %>
     </li>
     <% end %>
+  <% else %>
+    <li class>
+        NO SQUAKS YET :(
+
+    </li>
+  <% end %>
 
 <ul>
